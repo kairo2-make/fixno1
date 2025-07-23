@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Rise and Grind Aussie Kind</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    /* Enhanced Parallax Styles */
+    .about_section {
+      position: relative;
+      overflow: hidden;
+      background-color: #00204a;
+      color: white;
+      padding: 100px 0;
+      z-index: 1;
+    }
+    
+    .about_section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150%;
+      background-image: url('images/bg.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    
+    [data-parallax-speed] {
+      will-change: transform;
+      transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    
+    .parallax-img-container {
+      position: relative;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+      transform-style: preserve-3d;
+    }
+    
+    .parallax-img {
+      width: 100%;
+      height: 120%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .parallax-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0,32,74,0.3) 0%, rgba(0,32,74,0.7) 100%);
+      z-index: 1;
+    }
+    
+    .parallax-content {
+      background: rgba(0, 32, 74, 0.8);
+      padding: 40px;
+      border-radius: 15px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+    
+    .parallax-heading {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    
+    .parallax-span {
+      color: #00bbf0;
+      display: inline-block;
+    }
+    
+    .parallax-subheading {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      color: #00bbf0;
+    }
+    
+    .parallax-text {
+      margin-bottom: 20px;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    
+    .parallax-btn {
+      display: inline-block;
+      padding: 12px 35px;
+      background: #00bbf0;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.4s ease;
+      border: 2px solid #00bbf0;
+      margin-top: 15px;
+      box-shadow: 0 5px 15px rgba(0,187,240,0.3);
+    }
+    
+    .parallax-btn:hover {
+      background: transparent;
+      color: #00bbf0;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,187,240,0.4);
+    }
+    
+    @media (max-width: 992px) {
+      .parallax-img-container {
+        height: 350px;
+        margin-bottom: 40px;
+      }
+      
+      .about_section::before {
+        background-attachment: scroll;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .parallax-img-container {
+        height: 300px;
+      }
+      
+      .parallax-content {
+        padding: 30px;
+      }
+      
+      .parallax-heading {
+        font-size: 2rem;
+      }
+      
+      .parallax-subheading {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Rise and Grind
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html"> About <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why.html">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2 class="parallax-heading" data-parallax-speed="0.2">
+          About <span class="parallax-span" data-parallax-speed="0.3">Us</span>
+        </h2>
+        <p class="parallax-text" data-parallax-speed="0.1">
+          Build trust by sharing the Run and Gets story and its Australian mission.
+        </p>
+        <p class="parallax-text" data-parallax-speed="0.1">
+          "Run and Gets: Australia's New Way to Get Fit and Rewarded"
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box parallax-img-container">
+            <img src="images/runner.png" alt="" class="parallax-img" data-parallax-speed="0.5">
+            <div class="parallax-overlay"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box parallax-content" data-parallax-speed="0.3">
+            <h3 class="parallax-subheading" data-parallax-speed="0.2">
+              Our Story
+            </h3>
+            <p class="parallax-text" data-parallax-speed="0.1">
+              "Founded in Chile, Run and Gets has transformed fitness for thousands worldwide. Now, we're bringing our calorie-to-currency app to Australia, empowering Aussies to turn every workout into rewards."
+            </p>
+            <p class="parallax-text" data-parallax-speed="0.1">
+              Mention CEO Carolina Fourt and the app's 1,400+ iOS beta downloads for credibility.
+            </p>
+            <a href="" class="parallax-btn" data-parallax-speed="0.4">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Australian touch
+            </h4>
+            <p>
+              "Proudly launching in Australia, 2025."
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="" href="service.html">
+                Features
+              </a>
+              <a class="" href="why.html">
+                Why Us
+              </a>
+              <a class="" href="team.html">
+                Team
+              </a>
+              <a class="" href="contact.html">
+                Blog
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  
+  <!-- Parallax Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Check for reduced motion preference
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      
+      if (!prefersReducedMotion) {
+        let ticking = false;
+        
+        window.addEventListener('scroll', function() {
+          if (!ticking) {
+            window.requestAnimationFrame(function() {
+              updateParallax();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        });
+        
+        // Initialize elements
+        document.querySelectorAll('[data-parallax-speed]').forEach(el => {
+          el.style.transform = 'translateY(0)';
+        });
+        
+        // Initial call
+        updateParallax();
+      }
+      
+      function updateParallax() {
+        const scrollPosition = window.pageYOffset;
+        const aboutSection = document.querySelector('.about_section');
+        const sectionTop = aboutSection.offsetTop;
+        const sectionHeight = aboutSection.offsetHeight;
+        const viewportHeight = window.innerHeight;
+        
+        // Calculate section visibility (0 when top at bottom of viewport, 1 when bottom at top of viewport)
+        const sectionStart = scrollPosition + viewportHeight - sectionTop;
+        const sectionEnd = scrollPosition - (sectionTop + sectionHeight);
+        const sectionVisibility = Math.min(1, Math.max(0, sectionStart / (viewportHeight + sectionHeight)));
+        
+        // Apply parallax effects
+        document.querySelectorAll('[data-parallax-speed]').forEach(el => {
+          const speed = parseFloat(el.getAttribute('data-parallax-speed'));
+          const movement = sectionVisibility * 100 * speed;
+          
+          if(el.classList.contains('parallax-img')) {
+            // Image moves up (reveals more of the image)
+            el.style.transform = `translateY(-${movement * 0.6}px) scale(${1 + sectionVisibility * 0.05})`;
+          } else {
+            // Other elements move down
+            el.style.transform = `translateY(${movement}px)`;
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
